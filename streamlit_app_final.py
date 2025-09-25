@@ -30,7 +30,7 @@ class TripCrew:
         self.serper_api_key = st.secrets["SERPER_API_KEY"]
         
         # Pass the keys to your LLM and agents as needed
-        self.llm = LLM(model="gemini/gemini-2.0-flash")
+        self.llm = LLM(model="gemini/gemini-2.5-flash")
         # You'll need to update your TripAgents and TripTasks to accept these keys
         # For example, you might modify the agent initialization to pass the keys:
         # self.agents = TripAgents(llm=self.llm, browserless_api_key=self.browserless_api_key, serper_api_key=self.serper_api_key)
